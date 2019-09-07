@@ -1,0 +1,84 @@
+#root {
+    margin: 0 auto;
+    background-color: blanchedalmond;
+}
+
+.slider {
+    margin: 0 auto;
+    min-height: 500px;
+    max-height: 350px;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.slider .slides-container {
+    background-color: rgb(211, 132, 35);
+    width: 100%;
+}
+
+.slider .slider-item {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: absolute;
+    margin: 0 auto;
+    transition: 1.5s;
+    opacity: 0;
+}
+
+.slider .slider-item img {
+    max-width: 100%;
+}
+
+.slider .hidden {
+    opacity: 0;
+    transition: 1s;
+
+}
+
+.slider .active {
+    opacity: 1;
+    transition: 1.5s;
+}
+
+.slider .slider-btn {
+    width: 100px;
+    height: 100px;
+    border: none;
+    box-shadow: none;
+    background-color: black;
+    z-index: 20;
+    position: absolute;
+    opacity: 0.2;
+    transition: 0.4s;
+    height: 100%;;
+}
+
+.slider .slider-btn:hover {
+    background-color: black;
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.slider .btn-prev {
+    left: 0px;
+}
+
+.slider .btn-prev::before {
+    content: "<";
+    font-size: 50px;
+    color: red;
+
+}
+
+.slider .btn-next {
+    right: 0px;
+}
+
+.slider .btn-next::after {
+    content: ">";
+    font-size: 50px;
+    color: red;
+
+}
+
