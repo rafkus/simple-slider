@@ -1,0 +1,2 @@
+# simple-slider
+simple-slider
